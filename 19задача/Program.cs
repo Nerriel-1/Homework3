@@ -4,7 +4,7 @@
 Console.WriteLine("Введите пятизначное число");
 int num = int.Parse(Console.ReadLine());
 
-if((num/1000)/10 == ((num%100)%10) | ((num/1000)%10 == (num/100)/10))
+if((num/1000)/10 == ((num%100)%10) && ((num/1000)%10 == (num%100)/10))
 Console.WriteLine("Yes");
 else
 Console.WriteLine("No");
